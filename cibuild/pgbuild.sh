@@ -101,7 +101,7 @@ END
     export PATH=$(pwd)/bin:$PATH
 
 
-    EMCC_WEB="-sNO_EXIT_RUNTIME=1 -sENVIRONMENT=web"
+    EMCC_WEB="-sNO_EXIT_RUNTIME=1 -sENVIRONMENT=shell -s MODULARIZE=1 -s EXPORT_NAME='createModule' -sASSERTIONS=0"
     EMCC_NODE="-sEXIT_RUNTIME=1 -DEXIT_RUNTIME -sNODERAWFS -sENVIRONMENT=node"
 
     # -lwebsocket.js"
